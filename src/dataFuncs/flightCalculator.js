@@ -81,8 +81,7 @@ export const airportJourney = (passengers, journey) => {
   taxiCost = taxiCost * numOfVehicles * 2;
   carCost = carCost * numOfVehicles * 2;
   carCost += 3 * numOfVehicles;
-  // console.log(taxiCost, "<--taxi car-->", carCost);
-  // console.log(numOfVehicles);
+
   if (taxiCost < carCost) return { vehicle: "taxi", cost: taxiCost };
   if (carCost < taxiCost) return { vehicle: "car", cost: carCost };
   if (carCost === taxiCost) return { vehicle: "cat or taxi", cost: carCost };

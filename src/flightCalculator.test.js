@@ -34,15 +34,15 @@ describe("compileFlights()", () => {
       cost: 630
     });
   });
-  xit("return flight test", () => {
+  it("return flight test", () => {
     const journey = { passengers: 3, homeToAirport: "B20", destination: "D" };
     const origin = journey.homeToAirport[0];
     const destination = journey.destination;
     expect(
       compileFlights(destination, origin, journey.passengers)
     ).toMatchObject({
-      codes: "DE400-EB600",
-      cost: 630
+      codes: "DE300-EB500",
+      cost: 240
     });
   });
 });
