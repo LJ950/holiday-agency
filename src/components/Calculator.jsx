@@ -4,10 +4,10 @@ import "./css/calculator.css";
 import { compileFlights, airportJourney } from "../dataFuncs/flightCalculator";
 
 class Calculator extends Component {
-  state = {};
   render() {
     return (
       <div className="calculator">
+        <h3>Input</h3>
         <table>
           <tbody>
             <tr>
@@ -18,7 +18,7 @@ class Calculator extends Component {
             </tr>
             {journeys.map((journey, index) => {
               return (
-                <tr key={index}>
+                <tr key={index} className={this.rowClass(index)}>
                   <td>{index + 1}</td>
                   <td>{journey.passengers}</td>
                   <td>{journey.homeToAirport}</td>
@@ -28,6 +28,7 @@ class Calculator extends Component {
             })}
           </tbody>
         </table>
+        <h3>Output</h3>
         <table>
           <tbody>
             <tr>
@@ -41,7 +42,7 @@ class Calculator extends Component {
             </tr>
             {journeys.map((journey, index) => {
               return (
-                <tr key={index}>
+                <tr key={index} className={this.rowClass(index)}>
                   <td>{index + 1}</td>
                   <td>
                     {
@@ -99,6 +100,13 @@ class Calculator extends Component {
       </div>
     );
   }
+  rowClass = rowNum => {
+    if (rowNum % 2 === 0) {
+      return "even";
+    } else {
+      return "odd";
+    }
+  };
 }
 
 export default Calculator;
