@@ -23,14 +23,14 @@ export const flights = rawFlights.map(flight => {
 });
 
 export const journeys = [
-  { passengers: 2, homeToAirport: "B20", destination: "D" },
-  { passengers: 1, homeToAirport: "B30", destination: "D" },
-  { passengers: 2, homeToAirport: "A20", destination: "D" },
-  { passengers: 2, homeToAirport: "C30", destination: "A" },
-  { passengers: 2, homeToAirport: "B10", destination: "C" },
-  { passengers: 5, homeToAirport: "B10", destination: "C" },
-  { passengers: 1, homeToAirport: "D25", destination: "B" },
-  { passengers: 4, homeToAirport: "D40", destination: "A" },
-  { passengers: 2, homeToAirport: "B5", destination: "D" },
-  { passengers: 9, homeToAirport: "B30", destination: "D" }
+  { id: 1, passengers: 2, homeToAirport: "B20", destination: "D" },
+  { id: 2, passengers: 1, homeToAirport: "B30", destination: "D" },
+  { id: 3, passengers: 2, homeToAirport: "A20", destination: "D" },
+  { id: 4, passengers: 2, homeToAirport: "C30", destination: "A" },
+  { id: 5, passengers: 2, homeToAirport: "B10", destination: "C" },
+  { id: 6, passengers: 5, homeToAirport: "B10", destination: "C" },
+  { id: 7, passengers: 1, homeToAirport: "D25", destination: "B" },
+  { id: 8, passengers: 4, homeToAirport: "D40", destination: "A" },
+  { id: 9, passengers: 2, homeToAirport: "B5", destination: "D" },
+  { id: 10, passengers: 9, homeToAirport: "B30", destination: "D" }
 ];
